@@ -1,0 +1,279 @@
+:root {
+    --primary-color: #00beff;
+    --more-dark:#067ea7;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+.center {
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    text-align: right;
+}
+.center button {
+    font-family: coiny;
+    margin-top: 40px;
+    padding: 5px 10px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #00beff;
+    background: white ;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 30px;
+    float: right;
+}
+
+.center button:hover {
+    font-size: 110%;
+    transform: scale(20deg);
+    transition: all 300ms ease-in-out;
+    background-color: var(--more-dark);
+}
+body {
+    background-image: url('./img/endless-constellation.svg');
+    font-size: 24px;
+    font-family: "Coiny", sans-serif;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+}
+h1, h2, h3, h4, h5, h6, a {
+    font-weight:bold;
+}
+p {
+    font-family: "Open Sans", sans-serif ;
+}
+section{
+    min-height: 100vh;
+    padding-top: 40px;
+}
+.navbar {
+    background: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 13%;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1000;
+}
+.navbar a {
+    float: inline-start;
+    display: flex;
+    color: var(--primary-color);
+    padding: 7px 16px;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.navbar a:hover{
+    color: var(--more-dark);
+    transform: scale(20deg);
+    transition: all 300ms ease-in-out;
+    font-size: 110%;
+}
+#qual { 
+    margin-top: 60px;
+    font-size: 40px;
+}
+.text {
+    display: grid;
+}
+.text h1 {
+
+    height: auto;
+    max-width: 100%;
+}
+.grid {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+.grid h1 {
+    color: white;
+    margin-top: -20px;
+}
+.grid a{
+    text-decoration: none;
+}
+.grid button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+footer {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: auto;
+    background-color: white;
+    color:var(--primary-color);
+}
+
+footer p {
+    margin-left: 10px;
+    font-size: 2px;
+    color: black;
+}
+.selectable{
+    font-size: 28px;
+    user-select: text;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #dfdfdf;
+    display: flex;
+    margin-top: -60px;
+}
+#erro h3{
+    
+    font-weight: 600;
+}
+#erro h4{
+    font-size: 28px;
+    margin-top: 0;
+    font-weight: 500;
+}
+.selectable:hover {
+    font-size: 80%;
+    transform: scale(20deg);
+    transition: all 300ms ease-in-out;
+
+}
+.button-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 120px;
+    
+}
+a .btn-white {
+    margin: 0;
+    padding: 0;
+}
+.btn-white {
+    margin: 5% auto 0;
+    padding: 15px;
+    color: #00beff;
+    background-color: white;
+    border-style: none;
+    border-radius: 120px;
+    font-family: coiny;
+    font-size: 25px;
+}
+#naopossui a .btn-white{
+    padding: 15px;
+}
+.btn-white:hover{
+    cursor:pointer;
+}
+#areas h2 {
+    margin-top: 2%;
+    margin-bottom: -9%;
+}
+#btn-register { 
+    margin: 10% auto 0;
+    font-size: 30px;
+}
+.phone-number {
+    display: inline-block;
+    margin-bottom: 30;
+
+}
+.contact {
+    display: inline-block;
+
+}
+#eu {
+    font-size: 14px;
+    text-align: center;
+    margin-right: 20px;
+}
+#objetivo {
+    font-size: 13px;
+}
+.navbar a {
+    display: block;
+    height: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+#Areas {
+    display: flex;
+    padding-top: 23px;
+    margin-left: 10%;
+}
+.educa-vault-logo {
+    display: flex;
+    max-width: 35px;
+    flex-direction: column;
+    font-size: 32px;
+    color: #fff;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    padding: 0 20px;
+    margin-left: 20px;
+  }
+  
+  .logo-img {
+    aspect-ratio: 0.55;
+    object-fit: contain;
+    width: 100px;
+    align-self: center;
+    max-width: 100%;
+    margin-left: 20px;
+    padding-left: 30px;
+  }
+  
+  .logo-text {
+    font-family: Coiny, sans-serif;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  @media (max-width:800px) {
+    img {
+        margin-left: 0;
+    }
+    .grid {
+        margin: 30px;
+        grid-template-columns: 1fr;
+    }
+    #inicio{
+        margin-top: 60px;
+        min-height: 70vh;
+    }
+    .list{
+        padding: 0;
+    }
+    .list a {
+        font-size: 25px;
+        color: #00beff;
+        text-decoration: none;
+        margin: 20px;
+    }
+    .main-content #logo{
+        display: initial;
+    }
+    .button-container {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px 12
+    }
+}
